@@ -1,0 +1,29 @@
+<script>
+  debugger
+  // let arr = [2, 7, 5]
+  // let max = arr[0]
+  // for (let i=0; i<arr.length; i++) {
+  //   if (arr[i] > max) {
+  //     max = arr[i]
+  //   }
+  // }
+  // console.log(max)
+
+
+  // Unit2.6 Upper the string
+  let str = "You better run now!"
+  console.log(str.toUpperCase())
+  let ans1 = ""
+  for (let j=0; j<str.length; j++) {
+    let code = str.charCodeAt(j)
+    // console.log(code)
+    if (code > 97 && code <= 122) {
+      ans1 += String.fromCharCode(code - 32)
+    } else {
+      ans1 += str[j]
+    }
+  }
+  console.log(ans1)
+
+
+</script>
